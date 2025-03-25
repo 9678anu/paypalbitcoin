@@ -94,6 +94,62 @@
             margin-top: 10px;
             text-align: center;
         }
+        /* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    .invoice-container {
+        padding: 15px;
+    }
+    
+    .contentinvoice {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .invoice-details {
+        flex-direction: column;
+        text-align: center;
+        padding: 8px;
+    }
+    
+    .transaction-table th, .transaction-table td {
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    .header img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .invoice-container {
+        padding: 10px;
+        width: 95%;
+    }
+    
+    .transaction-table {
+        display: block;
+        overflow-x: auto; /* Adds horizontal scroll for tables on small screens */
+    }
+    
+    .transaction-table th, .transaction-table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    .footer {
+        font-size: 11px;
+    }
+    
+    .footer-img {
+        width: 40px;
+    }
+    
+    .invoice-details {
+        font-size: 12px;
+    }
+}
     </style>
     <script>
         function formatDate(date) {
